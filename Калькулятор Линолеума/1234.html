@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--Выполнил:Братухин Данила Андреевич пмф-191 -->
+<div id="app">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://	cdn.jsdelivr.net/npm/vue@2"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="12.css">
+	<title>Document</title>
+    </head> 
+   <body>
+   Тип линолеума  
+  <select v-model="selected">
+  <option v-for="option in options" :value="option">
+    {{ option.text }}
+  </option>
+  </select>
+    <div>
+    <input
+  type="number"
+  placeholder="Ширина"
+  name="width"
+  v-model="width"
+  v-on:input="area = width * lenght">
+        <div>
+    <input 
+  type="number"
+  placeholder="Длина"
+  name="lenght"
+  v-model="lenght"
+  v-on:input="area = width * lenght">
+  <div>
+    <span>{{ text1 }}{{ getArea }}</span><br>
+    <span>{{ text2 }}{{ getCount }}</span><br>
+    <span>Цена: {{ getCost }}</span>
+    <script src=" 123.js"></script>
+    </body>
+</div>
