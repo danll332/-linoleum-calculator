@@ -1,11 +1,5 @@
 
 setup(pos, top = null, right = null, bottom = null, left = null)
-    position pos
-    top top
-    left left
-    right right
-    bottom bottom
-
 
 * { box-sizing: border-box; transition: 0.3s cubic-bezier(0.6,0,0.2,1); }
 .abs-center { setup(absolute,50%,null,null,50%); transform: translate(-50%, -50%); }
